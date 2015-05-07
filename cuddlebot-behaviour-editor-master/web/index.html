@@ -827,6 +827,13 @@
             }
         })
     };
+    // breathe
+    // Sends single breath to cuddlebot
+    function breathe() {
+        sendSetPointCommand("ribs",0,1,[1000,0]);
+        console.log("ribs",0,1,[1000,0]);
+    }
+
     // Breathing actions for Laura's study
     var breathing;
     // startBreathing
